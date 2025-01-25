@@ -1,26 +1,11 @@
 Iteration 3:
 
 Grundsätzliches:
-Festlegung: 1 SP = 5 min.
+Festlegung: 1 SP = ~5 min.
 30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
 
 Übernahme aus it002:
 
-    - 2.2 - Ausschalten aller LEDs - 4 SP
-        - LedController erweitern um eine turnOffAllLeds() -Methode,
-          die alle Gruppen-LEDs ausschaltet
-        - Test hinzufügen, der den ApiService mocked, der diese
-          Funktionalität testet, ohne tatsächliche API-Calls an den Server zu
-          schicken
-    - 2.3 - Lauflicht - 4 SP
-        - LedController um eine neue Methode erweitern:
-          Zuerst werden alle Gruppen-LEDs ausgeschaltet
-          Dann wird die erste LED in einer spezizierten Farbe eingeschaltet
-          Nach 1s wird die LED ausgeschaltet und die nächste LED
-          eingeschaltet
-          Nach einer spezizierten Anzahl an Umdrehungen soll der Effekt
-          beendet werden, und alle LEDs ausgeschaltet werden
-        - Test hinzufügen (wie in vorherigen Stories)
     -  2.4 - Demo-Programm - 2 SP
           Main Klasse erweitern um einen spinningled-Command:
     - 2.5 - Demo-Programm - 2 SP
@@ -46,3 +31,9 @@ Festlegung: 1 SP = 5 min.
 
     - 3.3 - Demo-Anwendung    `
         - Main-Klasse erweitern um einen spinningwheel-Command:
+
+
+Plan: 1
+
+
+Krankenstand besser: Ziel sind 10 SP
