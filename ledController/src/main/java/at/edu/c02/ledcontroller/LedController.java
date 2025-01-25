@@ -16,4 +16,5 @@ public interface LedController {
     void laufLicht(String color, Integer turns) throws IOException, InterruptedException;
 
     void setLed(Integer id, String color) throws IOException;
+    void spinningWheelEffect(int turns) throws IOException, InterruptedException;
 }
