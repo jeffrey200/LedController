@@ -2,6 +2,7 @@ package at.edu.c02.ledcontroller;
 
 import org.json.JSONObject;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,8 +26,17 @@ public class ApiServiceImpl implements ApiService {
     @Override
     public JSONObject getLights() throws IOException
     {
+        return apiCall("https://balanced-civet-91.hasura.app/api/rest/getLights");
+    }
+
+    @Override
+    public JSONObject getLight(Integer id) throws IOException {
+        return apiCall("https://balanced-civet-91.hasura.app/api/rest/lights/" + id);
+    }
+
+    private JSONObject apiCall(String urlString) throws IOException {
         // Connect to the server
-        URL url = new URL("https://balanced-civet-91.hasura.app/api/rest/getLights");
+        URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         // and send a GET request
         connection.setRequestMethod("GET");
