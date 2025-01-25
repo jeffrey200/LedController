@@ -9,5 +9,11 @@
         <module name="ledController" />
       </profile>
     </annotationProcessing>
+<<<<<<< Updated upstream
+=======
+    <bytecodeTargetLevel>
+      <module name="ledController" target="20" />
+    </bytecodeTargetLevel>
+>>>>>>> Stashed changes
   </component>
 </project>
