@@ -27,7 +27,7 @@ Sprintplanung:
           Status einer LED abzufragen. Dabei wird die ID abgefragt:
 
           ` `
-Aufgrund vonkrankheitsbedingter Teamgröße (2 Personen) nur 6 SP pro Sprint => 1.1
+Aufgrund von krankheitsbedingter Teamgröße (2 Personen) nur 6 SP pro Sprint => 1.1
 nd so viel von 1.2 wie möglich als Sprintziel.
 
 Daily 1: Technische Schwierigkeiten bei Jeffrey (Projekt lässt sich nicht öffnen),
@@ -37,3 +37,15 @@ Da technische Schwierigkeiten fast behoben jetzt möglichst schnelles Coden.
 Daily 2: Technische Schwierigkeiten behoben.
 Matthias erstellt Issues (beim letzten mal im flaschen Repo)
 Jeffrey macht derweil implementation.
+
+Retro:
+Gute Schätzung:
+    1.1 Abgeschlossen
+    1.2 Implementiert, kämpft aber noch mit Bugs.
+Ausblick:
+    - Krankenstand wird besser (+1 MA)
+    - Ziel: Epic 1 abschließen
+Verbesserungen:
+    - Issues sauberer tracken
+
+
