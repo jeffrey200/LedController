@@ -124,6 +124,7 @@ public class LedControllerImpl implements LedController {
                 newOnOffs[j] = onOffs[j+1];
             }
             newColors[colors.length-1] = colors[colors.length-1];
+            newOnOffs[colors.length-1] = onOffs[colors.length-1];
             for(int j=0;j<groupLeds.length(); j++) {
                 Integer id = groupLeds.getJSONObject(j).getInt("id");
                 apiService.setLight(id, newOnOffs[j], newColors[j]);
