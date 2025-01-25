@@ -12,7 +12,7 @@ Sprintplanung:
           eine Methode ausgelagert wird
         - Keine Code-Duplication zwischen getLights() und
           getLight(id)
-          ` ` ` `
+          Erledigt.
     Story 1.2 - Gruppen-Status-Abfrage  3
         - LedController erweitern um getGroupLeds() -Methode, die ein
           Array aus allen LED-Status der Gruppen-LEDs zurückgibt
