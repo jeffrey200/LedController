@@ -40,3 +40,7 @@ Krankenstand leider doch nicht besser, nach wie vor 1 MA im KS
 
 Daily: 2.4 und 2.5 erledigt, ansonsten kein Fortschritt da sich die Ausstellung des Secrets von
        Kundenseite (Abteilung für Anfragemanagement ist unterbesetzt) verzögert.
+       Kunde wurde über Haftunsausschluss bezüglich Verzögerung via Teams Message informiert.
+
+       Update 25.01.25, 12:15: Kunde bittet um Verständnis und Umstellung auf Test Driven Development (TDD) mittels
+       lokaler Test.
