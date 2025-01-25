@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LedController.iml" filepath="$PROJECT_DIR$/.idea/LedController.iml" />
-<<<<<<< Updated upstream
-=======
-      <module fileurl="file://$PROJECT_DIR$/ledController/ledController.iml" filepath="$PROJECT_DIR$/ledController/ledController.iml" />
->>>>>>> Stashed changes
     </modules>
   </component>
 </project>
