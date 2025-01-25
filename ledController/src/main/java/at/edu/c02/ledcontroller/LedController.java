@@ -14,4 +14,6 @@ public interface LedController {
     void turnOffAllLeds() throws IOException, InterruptedException;
 
     void laufLicht(String color, Integer turns) throws IOException, InterruptedException;
+
+    void setLed(Integer id, String color) throws IOException;
 }

@@ -28,6 +28,19 @@ public class Main {
             {
                 ledController.getGroupStatus();
             }
+            else if(input.equalsIgnoreCase("setled"))
+            {
+                System.out.println("Which LED? (1-8)");
+                Integer id = 45 + Integer.valueOf(reader.readLine()) ;
+                System.out.println("Which color?");
+                String color = reader.readLine();
+                ledController.setLed(id, "#ff0");
+                System.out.println("LED color set!");
+            }
+            else if(input.equalsIgnoreCase("turnoffall"))
+            {
+                ledController.turnOffAllLeds();
+            }
             else if(input.equalsIgnoreCase("status"))
             {
                 System.out.println("Please specify LED ID:");
