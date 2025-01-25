@@ -41,6 +41,12 @@ public class Main {
             {
                 ledController.turnOffAllLeds();
             }
+            else if(input.equalsIgnoreCase("spinningwheel"))
+            {
+                System.out.println("How many steps?");
+                int steps = Integer.parseInt(reader.readLine());
+                ledController.spinningWheelEffect(steps);
+            }
             else if(input.equalsIgnoreCase("status"))
             {
                 System.out.println("Please specify LED ID:");
