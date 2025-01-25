@@ -2,7 +2,7 @@ Iteration 3:
 
 Grundsätzliches:
 Festlegung: 1 SP = ~5 min.
-30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
+30 min reine Programmierzeit
 
 -  4.1 - Uhrzeit - 6
     - Mithilfe der LEDs soll die aktuelle Uhrzeit angezeigt werden
@@ -13,7 +13,7 @@ Festlegung: 1 SP = ~5 min.
     - ApiService um DELETE-API-Call erweitern
 
 - 4.3 - Demo-Anwendung - 2
-    - Main -Klasse um clock -Command erweitern. Dabei sollen die
+    - Main - Klasse um clock -Command erweitern. Dabei sollen die
       LEDs alle 5s mit der aktuellen Uhrzeit aktualisiert werden.
     - Main-Klasse um delete -Command erweitern, mit dem eine
       gewünschte LED gelöscht werden kann.
