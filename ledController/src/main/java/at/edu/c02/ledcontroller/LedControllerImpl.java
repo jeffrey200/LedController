@@ -53,6 +53,38 @@ public class LedControllerImpl implements LedController {
         }
     }
 
+    public void getGroupStatus() throws IOException
+    {
+        JSONArray groupLeds = getGroupLeds();
+        for(int i=0; i<groupLeds.length(); i++) {
+            int id = groupLeds.getJSONObject(i).getInt("id");
+            String color = groupLeds.getJSONObject(i).getString("color");
+            String onOff = "off";
+            if(groupLeds.getJSONObject(i).getBoolean("on")) {
+                onOff = "on";
+            }
+            System.out.println("LED " + id + " is currently " + onOff + ". Color: " + color);
+        }
+    }
+
+    @Override
+    public void getStatus(int Id) throws IOException
+    {
+        JSONArray groupLeds = getGroupLeds();
+        for(int i=0; i<groupLeds.length(); i++) {
+            int id = groupLeds.getJSONObject(i).getInt("id");
+            if(id != Id) {
+                continue;
+            }
+            String color = groupLeds.getJSONObject(i).getString("color");
+            String onOff = "off";
+            if(groupLeds.getJSONObject(i).getBoolean("on")) {
+                onOff = "on";
+            }
+            System.out.println("LED " + id + " is currently " + onOff + ". Color: " + color);
+        }
+    }
+
     @Override
     public void laufLicht(String color, Integer turns) throws IOException, InterruptedException {
         this.turnOffAllLeds();
