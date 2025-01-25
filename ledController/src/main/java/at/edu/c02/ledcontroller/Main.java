@@ -8,7 +8,7 @@ public class Main {
     /**
      * This is the main program entry point. TODO: add new commands when implementing additional features.
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         LedController ledController = new LedControllerImpl(new ApiServiceImpl());
 
         String input = "";
@@ -26,6 +26,19 @@ public class Main {
             else if(input.equalsIgnoreCase("groupstatus"))
             {
                 ledController.getGroupStatus();
+            }
+            else if(input.equalsIgnoreCase("setled"))
+            {
+                System.out.println("Which LED? (1-8)");
+                Integer id = 45 + Integer.valueOf(reader.readLine()) ;
+                System.out.println("Which color?");
+                String color = reader.readLine();
+                ledController.setLed(id, "#ff0");
+                System.out.println("LED color set!");
+            }
+            else if(input.equalsIgnoreCase("turnoffall"))
+            {
+                ledController.turnOffAllLeds();
             }
             else if(input.equalsIgnoreCase("status"))
             {
