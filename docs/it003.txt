@@ -6,14 +6,14 @@ Festlegung: 1 SP = ~5 min.
 
 Übernahme aus it002:
 
-    -  2.4 - Demo-Programm - 2 SP
+    -  2.4 - Demo-Programm - 1 SP
           Main Klasse erweitern um einen spinningled-Command:
-    - 2.5 - Demo-Programm - 2 SP
+    - 2.5 - Demo-Programm - 1 SP
         - Main -Klasse erweitern um einen setled -Command, mit der eine
           LED auf eine bestimmte Farbe gesetzt werden kann. Dabei wird die
           LED automatisch eingeschalten.
 
-    -  3.1 - Secrets
+    -  3.1 - Secrets - 3
         - Die X-Hasura-Group-ID sollte nicht im Source-Code deniert
           werden (das Repository ist public, alle können das Secret lesen!)
         - Neue Datei secret.txt (auf gleicher Ebene wie README.md )
@@ -22,18 +22,18 @@ Festlegung: 1 SP = ~5 min.
           dann secret.txt eintragen, damit die Datei nicht committed wird
         - Secret aus Code löschen und stattdessen aus Datei auslesen
 
-    -  3.2 - Spinning Wheel
+    -  3.2 - Spinning Wheel - 4
         - Der LedController soll um einen Spinning Wheel-Effekt erweitert
           werden
         - Dabei drehen sich alle LEDs jede Sekunde um einen Platz im
           Uhrzeigersinn weiter
         - Die Anzahl der Schritte bis zum Beenden des Effekts wird angegeben
 
-    - 3.3 - Demo-Anwendung    `
+    - 3.3 - Demo-Anwendung - 3   `
         - Main-Klasse erweitern um einen spinningwheel-Command:
 
 
-Plan: 1
+Plan: Alles fertig kriegen
 
 
-Krankenstand besser: Ziel sind 10 SP
+Krankenstand leider doch nicht besser, nach wie vor 1 MA im KS
