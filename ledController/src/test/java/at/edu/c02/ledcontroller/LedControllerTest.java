@@ -49,4 +49,20 @@ public class LedControllerTest {
         assertFalse(api.getLight(48).getJSONArray("lights").getJSONObject(0).getBoolean("on"));
 
     }
+
+    @Test
+    public void turnOffAllLightsTest() throws IOException, InterruptedException {
+        LedController ledController = mock(LedController.class);
+        ledController.turnOffAllLeds();
+        verify(ledController).turnOffAllLeds();
+        verifyNoMoreInteractions(ledController);
+    }
+
+    @Test
+    public void laufLichtTest() throws IOException, InterruptedException {
+        LedController ledController = mock(LedController.class);
+        ledController.laufLicht("#f00", 3);
+        verify(ledController).laufLicht("#f00", 3);
+        verifyNoMoreInteractions(ledController);
+    }
 }

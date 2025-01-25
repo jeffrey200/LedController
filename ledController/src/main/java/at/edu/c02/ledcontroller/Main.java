@@ -23,6 +23,18 @@ public class Main {
             {
                 ledController.demo();
             }
+            else if(input.equalsIgnoreCase("groupstatus"))
+            {
+                ledController.getGroupStatus();
+            }
+            else if(input.equalsIgnoreCase("status"))
+            {
+                System.out.println("Please specify LED ID:");
+                input = reader.readLine();
+                int ledId = Integer.parseInt(input);
+                ledController.getStatus(ledId);
+                System.out.println();
+            }
         }
     }
 }
