@@ -24,9 +24,7 @@ jobs:
         cache: maven
 
     - name: Run tests with Maven
-      run: mvn -B test --file ledController/pom.xml --batch-mode
-      env:
-        SECRETKEY: ${{ secrets.SECRETKEY }}
+      run: mvn -B test --file ledController/pom.xml --batch-mode -DSECRETKEY=${{ secrets.SECRETKEY }}
 
 
     - name: Publish Test Report
