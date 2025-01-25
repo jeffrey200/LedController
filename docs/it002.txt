@@ -61,10 +61,22 @@ Krankenstand besser: Ziel sind 9 SP
 Daily 1:
     Jeffrey: 1.2 fertig, 2.1. implementiert aber kämpft noch mit Bugs
     Sergio: 1.3 ist in Arbeit.
-    Matthias: Vorbereiten nächster Sprint
+    Matthias: Vorbereiten nächster Sprint.
 
 Daily 2:
     Jeffrey: 2.1 erledigt, 2.2 wird in angriff genommen
     Sergio: 1.3 hängt noch
     Matthias: Unterstüzt beide als jeweils halber im Pair.
 
+Retro:
+
+Schätzung etwas zu konservativ:
+    Jeffrey: 12 SP (1.2, 2.1, 2.2, 2.3) abgeschlossen und 2.5 in angriff genommen. V I E C H!
+             30% drüber -> 300% Gehaltserhöhung!
+    Sergio: 3 SP (1.3) erledigt. und 2.4 in angriff genommen.
+Ausblick:
+    - Krankenstand sollte fertig sein (+1 MA)
+    - Ziel: Demo Klassen aus Epic 2 abschließen (damit E2 fertig)
+    - Ziel: Epic 3 abschließen.
+Verbesserungen:
+    - Besser schätzen, Jeffrey ist ein Programmiergott.

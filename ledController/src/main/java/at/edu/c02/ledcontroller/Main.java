@@ -8,7 +8,8 @@ public class Main {
     /**
      * This is the main program entry point. TODO: add new commands when implementing additional features.
      */
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException, InterruptedException
+    {
         LedController ledController = new LedControllerImpl(new ApiServiceImpl());
 
         String input = "";
@@ -47,6 +48,17 @@ public class Main {
                 int ledId = Integer.parseInt(input);
                 ledController.getStatus(ledId);
                 System.out.println();
+            }
+            else if(input.equalsIgnoreCase("spinningled"))
+            {
+                System.out.println("Which color? ");
+                input = reader.readLine();
+                String color = input;
+                System.out.println("How many turns? ");
+                input = reader.readLine();
+                int turns = Integer.parseInt(input);
+                System.out.println("Starting SpinningLed effect...");
+                ledController.laufLicht(color, turns);
             }
         }
     }
