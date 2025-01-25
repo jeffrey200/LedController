@@ -22,9 +22,13 @@ public class ApiServiceImpl implements ApiService {
     private String secret;
 
     public ApiServiceImpl() throws IOException {
-        secret = Files.lines(Paths.get("secret.txt"))
-                .findFirst()
-                .orElse(System.getenv("SECRETKEY"));
+        try {
+            secret = Files.lines(Paths.get("secret.txt"))
+                    .findFirst()
+                    .orElse("");
+        } catch (IOException e) {
+            secret = System.getenv("SECRETKEY");
+        }
     }
 
     /**
