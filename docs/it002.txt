@@ -2,7 +2,7 @@ Iteration 2:
 
 Grundsätzliches:
 Festlegung: 1 SP = 5 min.
-30 min reine Programmierzeit => 6 SP pro Team
+30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
 
 Übernahme aus it001:
     - Abschluss 1.2 - 1 SP
@@ -12,11 +12,15 @@ Festlegung: 1 SP = 5 min.
               getGroupLeds() die korrekten Methoden aufruft
             - In den Tests sollen keine API-Calls zum tatsächlichen Server gesendet
               werden!
+
+              Done
+
     - Ausarbeiten 1.3 - 3 SP
             - Main erweitern, sodass groupstatus eingegeben werden kann,
               um den Status aller Gruppen-LEDs anzuzeigen
             - Main erweitern, sodass status eingegeben werden kann, um den
-              Status einer LED abzufragen. Dabei wird die ID abgefragt:
+              Status einer LED abzufragen. Dabei wird die ID abgefragt.
+
 
     - 2.1 - Setzen einer LED - 3 SP
         - ApiService erweitern, sodass Farbe und Zustand einer LED
@@ -30,6 +34,7 @@ Festlegung: 1 SP = 5 min.
         - Test hinzufügen, der den ApiService mocked, der diese
           Funktionalität testet, ohne tatsächliche API-Calls an den Server zu
           schicken
+
     - 2.3 - Lauflicht - 4 SP
         - LedController um eine neue Methode erweitern:
           Zuerst werden alle Gruppen-LEDs ausgeschaltet
@@ -39,14 +44,16 @@ Festlegung: 1 SP = 5 min.
           Nach einer spezizierten Anzahl an Umdrehungen soll der Effekt
           beendet werden, und alle LEDs ausgeschaltet werden
         - Test hinzufügen (wie in vorherigen Stories)
+
     -  2.4 - Demo-Programm - 2 SP
-          Main Klasse erweitern um einen spinningled-Command:
+          Main Klasse erweitern um einen spinningled-Command.
+
     - 2.5 - Demo-Programm - 2 SP
         - Main -Klasse erweitern um einen setled -Command, mit der eine
           LED auf eine bestimmte Farbe gesetzt werden kann. Dabei wird die
           LED automatisch eingeschalten:
 
-Plan: 1.2 und 1.3 Abschließen, 2.2 und 2.4 so viel wie möglich
+Plan: 1.2 und 1.3 Abschließen, 2.1 erledigen, 2.2 und 2.3 so viel wie möglich
 
 
 Krankenstand besser: Ziel sind 9 SP
@@ -55,3 +62,9 @@ Daily 1:
     Jeffrey: 1.2 fertig, 2.1. implementiert aber kämpft noch mit Bugs
     Sergio: 1.3 ist in Arbeit.
     Matthias: Vorbereiten nächster Sprint
+
+Daily 2:
+    Jeffrey: 2.1 erledigt, 2.2 wird in angriff genommen
+    Sergio: 1.3 hängt noch
+    Matthias: Unterstüzt beide als jeweils halber im Pair.
+
