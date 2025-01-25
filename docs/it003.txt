@@ -2,7 +2,7 @@ Iteration 3:
 
 Grundsätzliches:
 Festlegung: 1 SP = ~5 min.
-30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
+30 min reine Programmierzeit
 
 Übernahme aus it002:
 
