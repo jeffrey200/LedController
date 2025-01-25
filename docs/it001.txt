@@ -33,3 +33,7 @@ nd so viel von 1.2 wie möglich als Sprintziel.
 Daily 1: Technische Schwierigkeiten bei Jeffrey (Projekt lässt sich nicht öffnen),
 Matthias versucht ihm zu helfen (Koffein wurde bereitgestellt).
 Da technische Schwierigkeiten fast behoben jetzt möglichst schnelles Coden.
+
+Daily 2: Technische Schwierigkeiten behoben.
+Matthias erstellt Issues (beim letzten mal im flaschen Repo)
+Jeffrey macht derweil implementation.
