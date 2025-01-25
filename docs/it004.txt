@@ -26,3 +26,7 @@ Plan: Projekt abschließen.
 Daily 1: Technische Probleme: Altlasten im Code führen zu verzügerungen,
          derzeit alles auf Halt bis der Code bereinigt ist.
 
+Daily 2: Technische Altlasten leider weiterhin vorhanden, Jeffrey ist derzeit leider damit beschäftigt das zu fixen
+         Sergio macht 3.2.2 (Bugfix Spinning Wheel)
+
+
