@@ -24,7 +24,7 @@ public class ApiServiceImpl implements ApiService {
     public ApiServiceImpl() throws IOException {
         secret = Files.lines(Paths.get("secret.txt"))
                 .findFirst()
-                .orElse("");
+                .orElse(System.getenv("SECRETKEY"));
     }
 
     /**
