@@ -1,0 +1,24 @@
+Iteration 3:
+
+Grundsätzliches:
+Festlegung: 1 SP = ~5 min.
+30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
+
+-  4.1 - Uhrzeit - 6
+    - Mithilfe der LEDs soll die aktuelle Uhrzeit angezeigt werden
+    - LedController um Funktionalität erweitern
+    - Test hinzufügen (wie in vorherigen Stories)
+
+- 4.2 - Löschen - 4
+    - ApiService um DELETE-API-Call erweitern
+
+- 4.3 - Demo-Anwendung - 2
+    - Main -Klasse um clock -Command erweitern. Dabei sollen die
+      LEDs alle 5s mit der aktuellen Uhrzeit aktualisiert werden.
+    - Main-Klasse um delete -Command erweitern, mit dem eine
+      gewünschte LED gelöscht werden kann.
+
+- 3.2.2 - Bugfix - 4
+    - Zeigt noch unerwünschtes Verhalten, wird überarbeitet
+
+Plan: Projekt abschließen.
