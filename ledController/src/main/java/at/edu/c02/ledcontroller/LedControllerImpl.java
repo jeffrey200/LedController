@@ -111,20 +111,22 @@ public class LedControllerImpl implements LedController {
         for(int i=0;i<turns; i++) {
             JSONArray groupLeds = this.getGroupLeds();
             String[] colors = new String[groupLeds.length()];
+            Boolean[] onOffs = new Boolean[groupLeds.length()];
             for(int j=0; j<groupLeds.length(); j++) {
                 String color = groupLeds.getJSONObject(j).getString("color");
                 colors[j] = color;
+                onOffs[j] = groupLeds.getJSONObject(j).getBoolean("on");
             }
-            System.out.println(Arrays.toString(colors));
             String[] newColors = new String[colors.length];
+            Boolean[] newOnOffs = new Boolean[onOffs.length];
             for(int j=0; j<colors.length-1; j++) {
                 newColors[j] = colors[j+1];
+                newOnOffs[j] = onOffs[j+1];
             }
             newColors[colors.length-1] = colors[colors.length-1];
-            System.out.println(Arrays.toString(newColors));
             for(int j=0;j<groupLeds.length(); j++) {
                 Integer id = groupLeds.getJSONObject(j).getInt("id");
-                apiService.setLight(id, true, newColors[j]);
+                apiService.setLight(id, newOnOffs[j], newColors[j]);
             }
             Thread.sleep(1000);
         }
