@@ -28,14 +28,14 @@ Sprintplanung:
 
           ` `
 Aufgrund von krankheitsbedingter Teamgröße (2 Personen) nur 6 SP pro Sprint => 1.1
-nd so viel von 1.2 wie möglich als Sprintziel.
+und so viel von 1.2 wie möglich als Sprintziel.
 
 Daily 1: Technische Schwierigkeiten bei Jeffrey (Projekt lässt sich nicht öffnen),
 Matthias versucht ihm zu helfen (Koffein wurde bereitgestellt).
-Da technische Schwierigkeiten fast behoben jetzt möglichst schnelles Coden.
+Da technische Schwierigkeiten fast behoben jetzt möglichst schnelles coden.
 
 Daily 2: Technische Schwierigkeiten behoben.
-Matthias erstellt Issues (beim letzten mal im flaschen Repo)
+Matthias erstellt Issues (beim letzten mal im falschen Repo)
 Jeffrey macht derweil implementation.
 
 Retro:
