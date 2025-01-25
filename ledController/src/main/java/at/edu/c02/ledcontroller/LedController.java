@@ -10,4 +10,6 @@ public interface LedController {
     JSONArray getGroupLeds() throws IOException;
     void getGroupStatus() throws IOException;
     void getStatus(int id) throws IOException;
+
+    void turnOffAllLeds() throws IOException;
 }

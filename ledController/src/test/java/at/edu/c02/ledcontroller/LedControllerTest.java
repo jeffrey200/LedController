@@ -6,8 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 
@@ -26,6 +25,36 @@ public class LedControllerTest {
         LedController ledController = mock(LedController.class);
         ledController.getGroupLeds();
         verify(ledController).getGroupLeds();
+        verifyNoMoreInteractions(ledController);
+    }
+
+    @Test
+    public void e2eSetLights() throws IOException {
+
+        ApiService api = new ApiServiceImpl();
+        api.setLight(48, true, "#0f0");
+
+        assertEquals(
+                "#0f0",
+                api.getLight(48).getJSONArray("lights").getJSONObject(0).getString("color")
+        );
+        assertTrue(api.getLight(48).getJSONArray("lights").getJSONObject(0).getBoolean("on"));
+
+        api.setLight(48, false);
+
+        assertEquals(
+                "#0f0",
+                api.getLight(48).getJSONArray("lights").getJSONObject(0).getString("color")
+        );
+        assertFalse(api.getLight(48).getJSONArray("lights").getJSONObject(0).getBoolean("on"));
+
+    }
+
+    @Test
+    public void turnOffAllLightsTest() throws IOException {
+        LedController ledController = mock(LedController.class);
+        ledController.turnOffAllLeds();
+        verify(ledController).turnOffAllLeds();
         verifyNoMoreInteractions(ledController);
     }
 }

@@ -1,0 +1,48 @@
+Iteration 3:
+
+Grundsätzliches:
+Festlegung: 1 SP = 5 min.
+30 min reine Programmierzeit => 6 SP für Senior (Jeffrey), 3 SP für Junior (Sergio)
+
+Übernahme aus it002:
+
+    - 2.2 - Ausschalten aller LEDs - 4 SP
+        - LedController erweitern um eine turnOffAllLeds() -Methode,
+          die alle Gruppen-LEDs ausschaltet
+        - Test hinzufügen, der den ApiService mocked, der diese
+          Funktionalität testet, ohne tatsächliche API-Calls an den Server zu
+          schicken
+    - 2.3 - Lauflicht - 4 SP
+        - LedController um eine neue Methode erweitern:
+          Zuerst werden alle Gruppen-LEDs ausgeschaltet
+          Dann wird die erste LED in einer spezizierten Farbe eingeschaltet
+          Nach 1s wird die LED ausgeschaltet und die nächste LED
+          eingeschaltet
+          Nach einer spezizierten Anzahl an Umdrehungen soll der Effekt
+          beendet werden, und alle LEDs ausgeschaltet werden
+        - Test hinzufügen (wie in vorherigen Stories)
+    -  2.4 - Demo-Programm - 2 SP
+          Main Klasse erweitern um einen spinningled-Command:
+    - 2.5 - Demo-Programm - 2 SP
+        - Main -Klasse erweitern um einen setled -Command, mit der eine
+          LED auf eine bestimmte Farbe gesetzt werden kann. Dabei wird die
+          LED automatisch eingeschalten.
+
+    -  3.1 - Secrets
+        - Die X-Hasura-Group-ID sollte nicht im Source-Code deniert
+          werden (das Repository ist public, alle können das Secret lesen!)
+        - Neue Datei secret.txt (auf gleicher Ebene wie README.md )
+          anlegen, und die X-Hasura-Group-ID dort einfügen
+        - .gitignore (auf gleicher Ebene wie README.md ) anlegen, dort
+          dann secret.txt eintragen, damit die Datei nicht committed wird
+        - Secret aus Code löschen und stattdessen aus Datei auslesen
+
+    -  3.2 - Spinning Wheel
+        - Der LedController soll um einen Spinning Wheel-Effekt erweitert
+          werden
+        - Dabei drehen sich alle LEDs jede Sekunde um einen Platz im
+          Uhrzeigersinn weiter
+        - Die Anzahl der Schritte bis zum Beenden des Effekts wird angegeben
+
+    - 3.3 - Demo-Anwendung    `
+        - Main-Klasse erweitern um einen spinningwheel-Command:
