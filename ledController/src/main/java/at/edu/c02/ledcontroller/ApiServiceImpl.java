@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * This class should handle all HTTP communication with the server.
@@ -16,6 +18,15 @@ import java.net.URL;
  * Do not implement any other logic here - the ApiService will be mocked to unit test the logic without needing a server.
  */
 public class ApiServiceImpl implements ApiService {
+
+    private String secret;
+
+    public ApiServiceImpl() throws IOException {
+        secret = Files.lines(Paths.get("secret.txt"))
+                .findFirst()
+                .orElse("");
+    }
+
     /**
      * This method calls the `GET /getLights` endpoint and returns the response.
      * TODO: When adding additional API calls, refactor this method. Extract/Create at least one private method that
@@ -51,7 +62,7 @@ public class ApiServiceImpl implements ApiService {
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         // and send a GET request
         connection.setRequestMethod("PUT");
-        connection.setRequestProperty("X-Hasura-Group-ID", "08ae9351d17");
+        connection.setRequestProperty("X-Hasura-Group-ID", secret);
         connection.setRequestProperty("Content-Type", "application/json");
         connection.setRequestProperty("Accept", "application/json");
         connection.setDoOutput(true);
@@ -90,7 +101,7 @@ public class ApiServiceImpl implements ApiService {
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         // and send a GET request
         connection.setRequestMethod("GET");
-        connection.setRequestProperty("X-Hasura-Group-ID", "Todo");
+        connection.setRequestProperty("X-Hasura-Group-ID", secret);
         // Read the response code
         int responseCode = connection.getResponseCode();
         if(responseCode != HttpURLConnection.HTTP_OK) {
