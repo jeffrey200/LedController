@@ -1,6 +1,7 @@
 Iteration 1:
 
 Festlegung: 1 SP = 5 min.
+30 min reine Programmierzeit => 6 SP pro Team
 
 Sprintplanung:
 - Epic 1:
@@ -28,3 +29,7 @@ Sprintplanung:
           ` `
 Aufgrund vonkrankheitsbedingter Teamgröße (2 Personen) nur 6 SP pro Sprint => 1.1
 nd so viel von 1.2 wie möglich als Sprintziel.
+
+Daily 1: Technische Schwierigkeiten bei Jeffrey (Projekt lässt sich nicht öffnen),
+Matthias versucht ihm zu helfen (Koffein wurde bereitgestellt).
+Da technische Schwierigkeiten fast behoben jetzt möglichst schnelles Coden.
