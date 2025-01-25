@@ -1,4 +1,4 @@
-Iteration 3:
+Iteration 4:
 
 Grundsätzliches:
 Festlegung: 1 SP = ~5 min.
@@ -29,4 +29,17 @@ Daily 1: Technische Probleme: Altlasten im Code führen zu verzügerungen,
 Daily 2: Technische Altlasten leider weiterhin vorhanden, Jeffrey ist derzeit leider damit beschäftigt das zu fixen
          Sergio macht 3.2.2 (Bugfix Spinning Wheel)
 
+Retro:
+
+Schätzung diesmal komplett daneben da es Probleme gab.
+    - .gitignore war falsch eingebunden hat die Projekte zerschossen.
+    - Bugfixes und Altlasten.
+    - Auf TDD umgestellt, Funktionen lokal getestet -> Sobald secret verfügbar ist wird deployed
+
+Ausblick:
+    - Bugfixes abgeschlossen.
+    - Mit ca 1 Sprint sollte Projekt abgeschlossen werden könnten.
+Verbesserungen:
+    - Code rot versuchen zu minimieren.
+    - Versuchen Altlasten in gesondertem Projekt zu bereinigen.
 
