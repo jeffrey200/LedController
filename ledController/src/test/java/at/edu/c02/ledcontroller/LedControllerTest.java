@@ -65,4 +65,12 @@ public class LedControllerTest {
         verify(ledController).laufLicht("#f00", 3);
         verifyNoMoreInteractions(ledController);
     }
+
+    @Test
+    public void spinningWheelEffectTest() throws IOException, InterruptedException {
+        LedController ledController = mock(LedController.class);
+        ledController.spinningWheelEffect( 3);
+        verify(ledController).spinningWheelEffect( 3);
+        verifyNoMoreInteractions(ledController);
+    }
 }
