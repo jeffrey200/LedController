@@ -1,0 +1,52 @@
+Iteration 2:
+
+Grundsätzliches:
+Festlegung: 1 SP = 5 min.
+30 min reine Programmierzeit => 6 SP pro Team
+
+Übernahme aus it001:
+    - Abschluss 1.2 - 1 SP
+            - LedController erweitern um getGroupLeds() -Methode, die ein
+              Array aus allen LED-Status der Gruppen-LEDs zurückgibt
+            - Test hinzufügen, der den ApiService mocked und prüft, dass
+              getGroupLeds() die korrekten Methoden aufruft
+            - In den Tests sollen keine API-Calls zum tatsächlichen Server gesendet
+              werden!
+    - Ausarbeiten 1.3 - 3 SP
+            - Main erweitern, sodass groupstatus eingegeben werden kann,
+              um den Status aller Gruppen-LEDs anzuzeigen
+            - Main erweitern, sodass status eingegeben werden kann, um den
+              Status einer LED abzufragen. Dabei wird die ID abgefragt:
+
+    - 2.1 - Setzen einer LED - 3 SP
+        - ApiService erweitern, sodass Farbe und Zustand einer LED
+          gesetzt werden kann
+        - End-to-End-Test hinzufügen, der tatsächlich eine LED am Beamer
+          setzt und danach den Status dieser LED abfragt
+
+    - 2.2 - Ausschalten aller LEDs - 4 SP
+        - LedController erweitern um eine turnOffAllLeds() -Methode,
+          die alle Gruppen-LEDs ausschaltet
+        - Test hinzufügen, der den ApiService mocked, der diese
+          Funktionalität testet, ohne tatsächliche API-Calls an den Server zu
+          schicken
+    - 2.3 - Lauflicht - 4 SP
+        - LedController um eine neue Methode erweitern:
+          Zuerst werden alle Gruppen-LEDs ausgeschaltet
+          Dann wird die erste LED in einer spezizierten Farbe eingeschaltet
+          Nach 1s wird die LED ausgeschaltet und die nächste LED
+          eingeschaltet
+          Nach einer spezizierten Anzahl an Umdrehungen soll der Effekt
+          beendet werden, und alle LEDs ausgeschaltet werden
+        - Test hinzufügen (wie in vorherigen Stories)
+    -  2.4 - Demo-Programm - 2 SP
+          Main Klasse erweitern um einen spinningled-Command:
+    - 2.5 - Demo-Programm - 2 SP
+        - Main -Klasse erweitern um einen setled -Command, mit der eine
+          LED auf eine bestimmte Farbe gesetzt werden kann. Dabei wird die
+          LED automatisch eingeschalten:
+
+Plan: 1.2 uns 1.3 Abschließen, 2.2 und 2.4 so viel wie möglich
+
+
+Krankenstand besser: Ziel sind 9 SP
