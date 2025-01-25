@@ -23,6 +23,9 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
+    - name: Create Secret File
+      run: echo "${{ secrets.SECRETKEY }}" > secret.txt
+
     - name: Run tests with Maven
       run: mvn -B test --file ledController/pom.xml --batch-mode
 
