@@ -11,5 +11,7 @@ public interface LedController {
     void getGroupStatus() throws IOException;
     void getStatus(int id) throws IOException;
 
-    void turnOffAllLeds() throws IOException;
+    void turnOffAllLeds() throws IOException, InterruptedException;
+
+    void laufLicht(String color, Integer turns) throws IOException, InterruptedException;
 }

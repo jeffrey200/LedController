@@ -51,10 +51,18 @@ public class LedControllerTest {
     }
 
     @Test
-    public void turnOffAllLightsTest() throws IOException {
+    public void turnOffAllLightsTest() throws IOException, InterruptedException {
         LedController ledController = mock(LedController.class);
         ledController.turnOffAllLeds();
         verify(ledController).turnOffAllLeds();
+        verifyNoMoreInteractions(ledController);
+    }
+
+    @Test
+    public void laufLichtTest() throws IOException, InterruptedException {
+        LedController ledController = mock(LedController.class);
+        ledController.laufLicht("#f00", 3);
+        verify(ledController).laufLicht("#f00", 3);
         verifyNoMoreInteractions(ledController);
     }
 }
