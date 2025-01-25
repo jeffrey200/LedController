@@ -23,14 +23,11 @@ jobs:
         distribution: 'adopt'
         cache: maven
 
-    - name: Create Secret File
-      run: echo "${{ secrets.SECRETKEY }}" > secret.txt
-
-    - name: Create Secret File
-      run: ls -ahl
-
     - name: Run tests with Maven
       run: mvn -B test --file ledController/pom.xml --batch-mode
+      env:
+        SECRETKEY: ${{ secrets.SECRETKEY }}
+
 
     - name: Publish Test Report
       uses: scacap/action-surefire-report@v1
