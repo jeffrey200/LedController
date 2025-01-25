@@ -22,3 +22,7 @@ Festlegung: 1 SP = ~5 min.
     - Zeigt noch unerwünschtes Verhalten, wird überarbeitet
 
 Plan: Projekt abschließen.
+
+Daily 1: Technische Probleme: Altlasten im Code führen zu verzügerungen,
+         derzeit alles auf Halt bis der Code bereinigt ist.
+
