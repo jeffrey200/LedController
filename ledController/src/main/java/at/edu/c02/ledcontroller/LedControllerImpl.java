@@ -44,11 +44,26 @@ public class LedControllerImpl implements LedController {
     }
 
     @Override
-    public void turnOffAllLeds() throws IOException {
+    public void turnOffAllLeds() throws IOException, InterruptedException {
         JSONArray res = this.getGroupLeds();
         for(int i=0; i<res.length(); i++) {
             JSONObject obj =  res.getJSONObject(i);
             apiService.setLight(obj.getInt("id"), false);
+            Thread.sleep(1000);
+        }
+    }
+
+    @Override
+    public void laufLicht(String color, Integer turns) throws IOException, InterruptedException {
+        this.turnOffAllLeds();
+        JSONArray groupLeds = this.getGroupLeds();
+        for(int i=0; i<turns; i++) {
+            for(int j=0;j<groupLeds.length(); j++) {
+                Integer id = groupLeds.getJSONObject(j).getInt("id");
+                apiService.setLight(id, true, color);
+                Thread.sleep(1000);
+                apiService.setLight(id, false);
+            }
         }
     }
 }

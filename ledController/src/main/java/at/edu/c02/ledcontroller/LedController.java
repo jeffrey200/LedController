@@ -9,5 +9,7 @@ public interface LedController {
     void demo() throws IOException;
     JSONArray getGroupLeds() throws IOException;
 
-    void turnOffAllLeds() throws IOException;
+    void turnOffAllLeds() throws IOException, InterruptedException;
+
+    void laufLicht(String color, Integer turns) throws IOException, InterruptedException;
 }
