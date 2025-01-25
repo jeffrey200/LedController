@@ -38,9 +38,14 @@ Plan: Alles fertig kriegen, da "nur" 12 SP
 
 Krankenstand leider doch nicht besser, nach wie vor 1 MA im KS
 
-Daily: 2.4 und 2.5 erledigt, ansonsten kein Fortschritt da sich die Ausstellung des Secrets von
+Daily 1: 2.4 und 2.5 erledigt, ansonsten kein Fortschritt da sich die Ausstellung des Secrets von
        Kundenseite (Abteilung für Anfragemanagement ist unterbesetzt) verzögert.
        Kunde wurde über Haftunsausschluss bezüglich Verzögerung via Teams Message informiert.
 
        Update 25.01.25, 12:15: Kunde bittet um Verständnis und Umstellung auf Test Driven Development (TDD) mittels
        lokaler Test.
+
+Daily 2: 3.1. erledigt, 3.2 genauso, Kunde sagt Secret steht bereit. Sobald tatsächlich verfügbar wird am Lifesystem
+         getestet und Punkte anschließend abgeschlossen.
+         3.3 in Arbeit
+
