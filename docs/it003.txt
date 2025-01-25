@@ -49,3 +49,23 @@ Daily 2: 3.1. erledigt, 3.2 genauso, Kunde sagt Secret steht bereit. Sobald tats
          getestet und Punkte anschließend abgeschlossen.
          3.3 in Arbeit
 
+         Update 25.01.25, 12:50: Secret wurde eingerichtet, ging jedoch verloren vor es an uns weitergegeben werden
+         konnte. Kunde bittet darum Primärfarben in Kleinschrift zu raten und versucht parallel
+         uns einen neuen Zugang zu geben.
+         Kunde über Verzögerung informiert.
+
+
+Retro:
+
+Schätzung etwas zu konservativ:
+    - Schätzung war super, sind mit allem vor der Zeit fertig geworden.
+    - Zusätzliche Issues da secret nach Neuausstellung aber VOR übermittlung Kundenseitig verloren gegangen ist
+    - Auf TDD umgestellt, Funktionen lokal getestet -> Sobald secret verfügbar ist wird deployed
+
+Ausblick:
+    - 1 MA leider länger erkrankt.
+    - Secret in erfahrung bringen -> Deployen
+    - Epic 4 in Angriff nehmen
+Verbesserungen:
+    - Bessere Kunden suchen.
+
